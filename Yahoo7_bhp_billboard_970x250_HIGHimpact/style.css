@@ -1,0 +1,224 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+  cursor: pointer;
+
+}
+
+#main-container {
+  position: absolute;
+  width: 970px;
+  height: 250px;
+  border: 1px solid #B7B9BB;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: white;
+
+}
+
+
+#expanded_clientlogo, #expanded_cta, #expanded_bgr, #unmute-btn-1, #mute-btn-1, #replay-btn-1, #expanded_copy, #expanded_heading{
+  background: rgba(0,0,0,0);
+}
+
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 970px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  border: 1px solid #B7B9BB;
+  display: none;
+}
+
+ #the_blind {
+  position:absolute;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background: #ffffff;
+}
+
+#expanded_clientlogo {
+  position: absolute;
+  top: 216px;
+  left: 898px;
+  width: 60px;
+  height: 23px;
+  background-image: url(logoBHP.svg);
+  background-repeat: no-repeat;
+}
+
+#expanded_cta {
+  position: absolute;
+  top: 216px;
+  left: 9px;
+  width: 138px;
+  height: 23px;
+  background-image: url(cta_findoutmore.svg);
+  background-repeat: no-repeat;
+}
+
+#expanded_bgr_container {
+  height: 198px;
+  width: 950px;
+  overflow: hidden;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+#expanded_bgr {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 950px;
+  height: 198px;
+  background-image: url(expanded_bgr.jpg);
+  background-repeat: no-repeat;
+  display: none;
+  background-size: 950px 198px;
+  z-index: 100;
+
+
+
+}
+
+#expanded_heading {
+  position: absolute;
+  top: 75px;
+  left: 11px;
+  width: 169px;
+  height: 39px;
+  background-image: url(feature_heading.svg);
+  background-repeat: no-repeat;
+  display: none;
+  z-index: 400;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+}
+
+
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: #339933;
+  border: 1px outset #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+.feature-expanded {
+  top: 0px;
+  left: 0px;
+  width: 970px;
+  height: 250px;
+  position: absolute;
+}
+
+#video-container-1 {
+  position: absolute;
+  width: 950px;
+  height: 198px;
+  top: 9px;
+  left: 9px;
+  border: none;
+  z-index: 10;
+
+}
+
+#video-1 {
+  position: absolute;
+  width: 950px;
+  height: 198px;
+  padding-bottom: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.video-controls {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: -1px;
+  background-color: #FFF;
+}
+
+/* Video button hiding an positioning */
+.video-controls:hover {
+  border-bottom: 1px solid #666;
+}
+
+#unmute-btn-1 {
+  background-image:url(unmute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 180px;
+  top: 215px;
+  width: 22px;
+  height: 24px;
+}
+
+#mute-btn-1 {
+  background-image:url(mute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 184px;
+  top: 215px;
+  width: 22px;
+  height: 24px;
+}
+
+#replay-btn-1 {
+  background-image:url(replay.svg);
+  background-repeat:no-repeat;
+  position: absolute;
+  right: 711px;
+  top: 213px;
+  width: 31px;
+  height: 26px;
+}
+#expanded_copy{
+  position: absolute;
+  top: 87px;
+  left: 12px;
+  width: 721px;
+  height: 26px;
+  background-image: url(feature_copy.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
