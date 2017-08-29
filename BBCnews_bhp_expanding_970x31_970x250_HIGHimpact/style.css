@@ -1,0 +1,352 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+  cursor: pointer;
+
+}
+
+
+#main-container {
+  position: absolute;
+  width: 970px;
+  height: 250px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: white;
+
+}
+
+
+#expanded_clientlogo, #expanded_cta, #expanded_bgr, #unmute-btn-1, #mute-btn-1, #replay-btn-1, #expanded_copy, #expanded_heading{
+  background: rgba(0,0,0,0);
+}
+
+
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 31px;
+  z-index: 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: #FFF;
+  border: 1px solid #B7B9BB;
+  box-sizing: border-box;
+  background: white;
+  background-image: url(collapsed_bgr.png);
+
+}
+
+#expand-button {
+  position: absolute;
+  top: 5px;
+  left: 540px;
+  width: 155px;
+  height: 21px;
+  background: rgba(0,0,0,0);
+  background-image: url(cta_expand.svg);
+  background-repeat: no-repeat;
+  display: none;
+}
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 970px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 200;
+  border: 1px solid #B7B9BB;
+  display: none;
+  background: white;
+
+}
+
+ #the_blind {
+  position:absolute;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background: #ffffff;
+}
+
+
+#expanded_clientlogo {
+
+  position: absolute;
+  top: 215px;
+  right: 10px;
+  width: 70px;
+  height: 26px;
+  background: transparent;
+  background-image: url(logoBHP.svg);
+  background-repeat: no-repeat;
+}
+
+#expanded_cta {
+  position: absolute;
+  top: 217px;
+  left: 10px;
+  width: 138px;
+  height: 23px;
+  background-image: url(cta_findoutmore.svg);
+  background-repeat: no-repeat;
+  z-index: 9999;
+
+}
+
+#expanded_bgr_container {
+  height: 198px;
+  width: 950px;
+  overflow: hidden;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+
+}
+
+#expanded_bgr {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 950px;
+  height: 198px;
+  background-image: url(endframe_image.jpg);
+  background-size: 950px 198px;
+  background-repeat: no-repeat;
+  opacity:0;
+  z-index: 999;
+}
+
+#expanded_heading {
+  position: absolute;
+  top: 78px;
+  left: 15px;
+  width: 148px;
+  height: 34px;
+  background: transparent;
+  background-image: url(thinkBig.svg);
+  background-repeat: no-repeat;
+  opacity:0;
+  z-index: 999;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 1000;
+  display: none;
+}
+
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+  background: white;
+}
+
+.button {
+  position: absolute;
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight:bold;
+}
+
+
+#collapse-button {
+  top: 8px;
+  right: 8px;
+  display: none;
+  z-index: 1001;
+  background-color: #fff;
+  
+
+}
+
+.feature-collapsed {
+  top: 10px;
+  left: 474px;
+  width: 21.333333333333332px;
+  height: 30px;
+  position: absolute;
+  background: transparent;
+
+}
+
+.feature-expanded {
+  top: 0px;
+  left: 0px;
+  width: 970px;
+  height: 250px;
+  position: absolute;
+  background: rgba(0,0,0,0);
+
+}
+
+  
+#video-container-1 {
+  position: absolute;
+  width: 950px;
+  height: 198px;
+  top: 8px;
+  background-color: none;
+  z-index: 500;
+  border: none;
+  visibility: hidden;
+  background: white;
+
+}
+
+#video-1 {
+  position: absolute;
+  width: 950px;
+  height: 198px;
+  padding-bottom: 0px;
+  left: 10px;
+  bottom: 0px;
+  box-sizing: border-box;
+}
+
+.video-controls {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: -1px;
+  cursor: pointer;
+  background-color: #FFF;
+  z-index: 700;
+
+}
+
+/* Video button hiding an positioning */
+.video-controls:hover {
+  border-bottom: 1px solid #666;
+}
+
+#play-btn-1 {
+  background-image:url(play.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: 0;
+  display: none;
+
+}
+#progress-bar-1 {
+  position: absolute;
+  background-color: #339933;
+  bottom: 18px;
+  height: 4px;
+}
+
+#pause-btn-1 {
+  background-image:url(pause.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: 0px;
+  visibility: hidden;
+}
+
+#stop-btn-1 {
+  background-image:url(stop.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  left: 20px;
+}
+
+#unmute-btn-1 {
+  background-image:url(unmute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 169px;
+  top: 217px;
+  width: 22px;
+  height: 24px;
+  z-index: 9999;
+}
+#mute-btn-1 {
+  background-image:url(mute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 171px;
+  top: 217px;
+  width: 22px;
+  height: 24px;
+  z-index: 9999;
+}
+
+#replay-btn-1 {
+  background-image:url(replay.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 205px;
+  top: 217px;
+  width: 25px;
+  height: 24px;
+  z-index: 9999;
+}
+#collapsed_heading{
+  position: absolute;
+  left: 22px;
+  top: 4px;
+  width: 100px;
+  height: 25px;
+  background: transparent;
+  background-image:url(thinkBig.svg);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+#collapsed_logo{
+  position: absolute;
+  left: 889px;
+  top: 4px;
+  width: 60px;
+  height: 23px;
+  background: transparent;
+  background-image:url(logoBHP.svg);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
